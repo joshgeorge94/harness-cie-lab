@@ -1,0 +1,23 @@
+connector:
+  name: github-joshgeorge94
+  identifier: githubjoshgeorge94
+  description:
+  orgIdentifier: default
+  projectIdentifier: bootcampciJoshG
+  type: Github
+  spec:
+    url: https://github.com/joshgeorge94
+    validationRepo: harness-cie-lab
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: joshgeorge94
+          tokenRef: bootcampmarch2022
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: bootcampmarch2022
+    executeOnDelegate: true
+    type: Account
